@@ -1,0 +1,14 @@
+{
+    "name": "Raphael/Stdlib",
+    "description": "Raphael PHP standard library",
+    "require": {
+        "php": ">=5.5"
+	},
+	"autoload": {
+        "psr-0": {
+            "Raphael\\Stdlib\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
