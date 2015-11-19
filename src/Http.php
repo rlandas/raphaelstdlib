@@ -25,4 +25,14 @@ abstract class Http
         }
         return $ip;
     }
+
+    /**
+     * Get the client's browser user agent
+     *
+     * @return string
+     */
+    static public function userAgent ()
+    {
+        return isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : null;
+    }
 }
