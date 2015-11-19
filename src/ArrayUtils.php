@@ -24,4 +24,21 @@ abstract class ArrayUtils
         }
         return $return;
     }
+
+    /**
+     * Get the specific parameter given its key
+     *
+     * @param array $array
+     * @param mixed $key Parameter name to retrieve.
+     * @param mixed $default Default value to use when the parameter is missing.
+     * @return mixed
+     */
+    static public function get (array $array, $key, $default = null)
+    {
+        if (array_key_exists($key, $array)) {
+            return $array[$key];
+        }
+
+        return $default;
+    }
 }

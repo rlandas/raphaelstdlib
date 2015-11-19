@@ -10,7 +10,7 @@ abstract class Http
      *
      * @return string
      */
-    static public function getClientIp ()
+    static public function clientIp ()
     {
         if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
             // check ip from share internet
